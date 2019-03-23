@@ -19,9 +19,8 @@ function init() {
 		speed.push(randomValue);
 
 	var randomSelection = Math.round(Math.random()*4) + 1;
-}
 
-	// Load a texture
+  // Load a texture
 	texture = new THREE.TextureLoader().load( "textures/texture"+randomSelection+".jpg" );
 
 	// Create a MeshBasicMaterial with a loaded texture
@@ -30,7 +29,7 @@ function init() {
 	// Combine the geometry and material into a mesh
 	mesh = new THREE.Mesh( geometry, material );
 	mesh.position.y = 30;
-	mesh.rotation.x = Math.random()*200;
+
 
   // Add the mesh to the scene
 	scene.add( mesh );
@@ -52,6 +51,7 @@ function init() {
 
 	// Add in the created DOM element to the body of the document
 	document.body.appendChild( renderer.domElement );
+}
 
 
 function animate() {
@@ -59,20 +59,29 @@ function animate() {
 	// 	(thus creating an infinite loop)
 	requestAnimationFrame( animate );
 
-	// Rotate the x position of the mesh by 0.03
-	mesh.rotation.x += 0.02;
-	// Rotate the y position of the mesh by 0.02
-	mesh.rotation.y += 0.01;
+	for(var i=0; i<cubesNum; i++){
 
-	//Move the mesh towards the bottom of the screen
-	mesh.position.y -= 0.2;
+			// Rotate the x position of the mesh by 0.03
+			cubes[i].rotation.x += speed[i] / 100;
+			// Rotate the y position of the mesh by 0.02
+			cubes[i].rotation.y += speed[i] / 80;
 
-	//If the mesh passes the bottom of the screen,
-	//make it appear on the top. Also x position is randomized
-	if (mesh.position.y <- 30){
-		mesh.position.y = 35;
-		mesh.position.x = (Math.random() * -20) +10;
+
+
+			//Move the mesh towards the bottom of the screen
+			cubes[i].position.y -= speed[i];
+
+			//If the mesh passes the bottom of the screen,
+			//make it appear on the top. Also x position is randomized
+			if (cubes[i].position.y <- 30){
+				cubes[i].position.y = 35;
+				cubes[i].position.x = (Math.random()*-20) +10;
+				cubes[i].scale.x = Math.random();
+				cubes[i].scale.y = Math.random();
+				cubes[i].scale.z = Math.random();
 	}
+}
+
 
 	// Render everything using the created renderer, scene, and camera
 	renderer.render( scene, camera );
