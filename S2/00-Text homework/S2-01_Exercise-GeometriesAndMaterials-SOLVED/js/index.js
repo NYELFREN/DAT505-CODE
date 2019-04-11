@@ -1,6 +1,3 @@
-// -----------------------------------------------------------------------------
-// BASIC SETUP
-// ------------------------------------------------
 
 // Create an empty scene --------------------------
 var scene = new THREE.Scene();
@@ -26,48 +23,12 @@ scene.add(light1);
 
 var light2 = new THREE.PointLight(0xffffff, 0.5);
 scene.add(light2);
-// ------------------------------------------------
-
-// -----------------------------------------------------------------------------
-
-// ------------------------------------------------
-// Main Content
-// ------------------------------------------------
 
 // Create a Cube Mesh with basic material ---------
 var geometry = new THREE.ConeGeometry(50, 50, 50);
 
-// MATERIAL 1:
-//var material3 = new THREE.MeshBasicMaterial( { color: "#433F81" } );
-
 //MATERIAL 2:
 var material2 = new THREE.MeshNormalMaterial();
-
-//MATERIAL 3:
-/*
-var material = new THREE.MeshLambertMaterial({
-  color: "#433F81",
-  transparent: true,
-  opacity: 1
-});
-*/
-
-//MATERIAL 4:
-//var material4 = new THREE.MeshPhongMaterial({shininess: 1});
-
-//MATERIAL 5 (non-shiny material):
-
-var material1 = new THREE.MeshLambertMaterial({
-  color: '#D2BE82',
-  lightMap: null,
-  lightMapIntensity: 1,
-  emissive: 0x000000,
-  emissiveMap: null,
-  emissiveIntensity: 1,
-  specularMap: null
-});
-
-
 
 var texture1 = new THREE.TextureLoader().load("textures/jj.jpg");
 
