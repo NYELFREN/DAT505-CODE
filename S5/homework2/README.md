@@ -1,1 +1,2 @@
 # DAT505-CODE
+# Comparing with the previous one, this assignment is about how to move a small square randomly. This time, I created a new 5*5 group to practice. I used the If code mentioned in class to change the color of the small square. By locating the X-Y axis, I locked a small square, changed its movement mode, and then if else, I needed it again. Change the next cube and define it differently to achieve the desired effect.
