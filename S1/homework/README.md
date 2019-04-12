@@ -1,4 +1,6 @@
 # DAT505-CODE
+
+![Image text](https://github.com/NYELFREN/DAT505-Github/blob/master/picture/01.png)
 This code defines eight different geometries and including a scene,a camera and a renderer.
 ```javascript
 //Global variables
