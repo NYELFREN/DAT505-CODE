@@ -1,6 +1,3 @@
-// MatCap-style image rendered on a sphere
-// modify sphere UVs instead of using a ShaderMaterial
-
 var camera, scene, renderer, mesh;
 var image;
 var mouseX = 0, mouseY = 0;

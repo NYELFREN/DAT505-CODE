@@ -30,7 +30,6 @@ function init() {
 
       var boxGeometry = new THREE.BoxGeometry(3, 3, 3);
       //The color of the material is assigned a random color
-      //var boxMaterial = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
       if (x==-5 && y==-5){
         boxMaterial = new THREE.MeshLambertMaterial({color: 0xEE2C2C});
       } else if (x==5 && y ==5){
@@ -46,8 +45,7 @@ function init() {
       mesh.rotation.x = Math.random() * 2 * Math.PI;;
       mesh.rotation.y = Math.random() * 2 * Math.PI;;
       mesh.rotation.z = Math.random() * 2 * Math.PI;;
-      //console.log( "Rotation1:" + rotValue);
-      //console.log( "Rotation2:" + rotValue);
+
       //Create random values for x and y, and store them
   var randomValueX = (Math.random() * 0.1)- 0.05;
       randomSpeedX.push(randomValueX);

@@ -1,7 +1,6 @@
 // GLOBALS ======================================================
 var camera, scene, renderer, controls, clock;
 var INV_MAX_FPS = 1 / 100, frameDelta = 0;
-
 var floor;
 
 // SETUP ========================================================
@@ -79,10 +78,6 @@ function setupWorld() {
 
   //Mesh of the city
   var city = new THREE.Mesh(cityGeometry, material);
-
-  //Cast shadows of the models
-  //city.castShadow = true;
-  //city.receiveShadow = true;
   scene.add(city);
 
   //Create the lighting system and add to the scene
@@ -90,14 +85,9 @@ function setupWorld() {
   var light = new THREE.DirectionalLight(0xf9f1c2, 1);
   light.position.set(500, 1500, 1000);
   light.castShadow = true;
-  //light.shadowMapWidth = 2048;
-  //light.shadowMapHeight = 2048;
+
   var d = 1000;
-  //light.shadowCameraLeft = d;
-  //light.shadowCameraRight = -d;
-  //light.shadowCameraTop = d;
-  //light.shadowCameraBottom = -d;
-  //light.shadowCameraFar = 2500;
+
   scene.add(light);
 }
 

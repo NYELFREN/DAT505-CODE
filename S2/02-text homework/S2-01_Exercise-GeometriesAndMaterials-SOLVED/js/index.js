@@ -1,24 +1,8 @@
-// -----------------------------------------------------------------------------
-// BASIC SETUP
-// ------------------------------------------------
-
-
 // Create an empty scene --------------------------
 var scene = new THREE.Scene();
 
 // Create a basic perspective camera --------------
 var camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 300, 10000 );
-//var controls = new THREE.OrbitControls( camera );
-//camera.position.set( -50, 100, -800 );
-//controls.update();
-//function animate() {
-    //requestAnimationFrame( animate );
-
-     //required if controls.enableDamping or controls.autoRotate are set to true
-    //controls.update();
-    //renderer.render( scene, camera );
-//}
-
 
 // Create a renderer with Antialiasing ------------
 var renderer = new THREE.WebGLRenderer({antialias:true});
@@ -38,13 +22,6 @@ scene.add(light1);
 
 var light2 = new THREE.PointLight(0xffffff, 0.5);
 scene.add(light2);
-// ------------------------------------------------
-
-// -----------------------------------------------------------------------------
-
-// ------------------------------------------------
-// Main Content
-// ------------------------------------------------
 
 // Create a Cube Mesh with basic material ---------
 var geometry = new THREE.SphereGeometry(25, 25, 25);
@@ -127,10 +104,6 @@ mesh7.position.z = 0;
 mesh7.position.x = -450;
 mesh7.position.y = 0;
 
-
-//scene.add(mesh1);
-//scene.add(mesh2);
-
 var newgroup = new THREE.Group();
 newgroup.position.z = -1000;
 newgroup.position.x = -50;
@@ -176,8 +149,6 @@ var render = function () {
   //newgroup.rotation.x = rot; //Continuously rotate the mesh
   newgroup.rotation.y = rot;
   //newgroup.rotation.z = rot;
-
-
 
   // Render the scene
   renderer.render(scene, camera);
@@ -243,11 +214,6 @@ color = Math.random() * 0xffffff;
     mesh2.scale.z = (controller1.scaleZ);
   });
 
-
-
-  //gui.add( controller, 'castShadow', false ).onChange( function() {
-    //mesh.castShadow = controller.castShadow;
-  //});
 
 //init();
 render(); //Run the function render
