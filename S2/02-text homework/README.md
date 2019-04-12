@@ -1,4 +1,5 @@
 # DAT505-CODE
+![Image text](https://github.com/NYELFREN/DAT505-Github/blob/master/picture/S2.png)
 This code basically creates the basic scene camera renderer and two different light sources and defines the sphere I need for my homework and I define the size of each sphere.
 ```javascript
 // Create an empty scene --------------------------

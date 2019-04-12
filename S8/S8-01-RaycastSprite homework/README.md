@@ -1,4 +1,6 @@
 # DAT505-CODE
+
+![Image text](https://github.com/NYELFREN/DAT505-Github/blob/master/picture/S8%2001.png)
 This code creates a scene camera renderer that groups three objects together and adds an OrbitControl controller
 ```javascript
 var renderer, scene, camera;
