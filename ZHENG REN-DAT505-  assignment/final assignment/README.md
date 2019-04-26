@@ -1,4 +1,9 @@
 # Final work
+
+Githublink:https://github.com/NYELFREN/DAT505-Github
+Name RenZheng
+NUA Student ID B161006077
+
 The last job I choose to be a artiest work, I choose to use a few point source at the beginning, I want to make alternating between color transformation, after a try, I found the point source of light and color transformation into the crisscross of light and shadow is more interesting, so I will different point light gives ball will each ball into a luminous body, and then give each ball set on the circle, to make the light shadow looks hand in photograph reflect, and then I will be a light source position is fixed at the top of the scene, and add the background music, so my work looks more like a complete works of art, with the music playing, you can try to change the different colors of each light source, and you can feel the different feelings brought by different lights and shadows. In the production method, I refer to some of the code I learned in class, including the use of controllers, as well as the use of different functions. I will explain each code differently below.
 
 In this code, I first created the required airport scenery and renderer, as well as the required five point light sources. I defined their color intensity and other attributes for each point light source. Then I created Sphere Buffer Geometry and added Canvas material to it.
